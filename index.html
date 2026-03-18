@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Shazy's Burgers</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Shazy's Burgers</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel1.jpg" class="d-block w-100" alt="Burger" />
+          <div class="carousel-caption">
+            <h5>Made to order</h5>
+            <p>Using only the finest ingredients</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/carousel2.jpg" class="d-block w-100" alt="Menu" />
+          <div class="carousel-caption">
+            <h5>Over 50 types on our menu</h5>
+            <p>Or build your own</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="container text-center py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <img
+            src="images/open.jpg"
+            class="rounded-circle mb-3"
+            alt="Restaurants"
+          />
+          <h3>Over 50 Restaurants</h3>
+          <p>Treat yourself next time you're in the area.</p>
+          <a class="btn btn-secondary" href="#">View details</a>
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="images/challenge.jpg"
+            class="rounded-circle mb-3"
+            alt="Challenge"
+          />
+          <h3>Fancy a challenge?</h3>
+          <p>Try one of our burger eating challenges!</p>
+          <a class="btn btn-secondary" href="#">View details</a>
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="images/sign.jpg"
+            class="rounded-circle mb-3"
+            alt="Reputation"
+          />
+          <h3>Established 2009</h3>
+          <p>15+ years of quality and reputation.</p>
+          <a class="btn btn-secondary" href="#">View details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGNUP SECTION -->
+    <div class="container-fluid bg-dark text-light py-3">
+      <div class="row align-items-center text-center">
+        <div class="col-md-7">
+          <p class="mb-0">Sign up for exclusive offers...</p>
+        </div>
+        <div class="col-md-5">
+          <button
+            class="btn btn-success"
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+          >
+            Sign up here
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="signupModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign up for exclusive offers</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Your name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your name"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Your email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Your address</label>
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Enter your address"
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" />
+                  <label class="form-check-label">Contact by email</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" />
+                  <label class="form-check-label">Contact by post</label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container py-4">
+      <div class="d-flex justify-content-between">
+        <p class="mb-0">&copy; Shazy's Burgers</p>
+        <a href="#">Back to top</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
